@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK UM SHAMMA'S KITCHEN | Authentic Indian Taste</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0c0a09; color: #f5f5f4; }
+        .font-arabic { font-family: sans-serif; }
+        @keyframes pulse-slow { 0%, 100% { opacity: 0.1; } 50% { opacity: 0.2; } }
+        .animate-pulse-slow { animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    </style>
+</head>
+<body class="selection:bg-orange-600 selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 py-8">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-4 group cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div class="bg-orange-600 p-2.5 rounded-2xl rotate-12 transition-transform group-hover:rotate-0 shadow-lg shadow-orange-600/20">
+                    <i data-lucide="utensils" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="font-black text-xl md:text-2xl tracking-tighter uppercase italic flex items-center gap-2">
+                    SK UM SHAMMA'S <span class="text-orange-500">KITCHEN 🍽️</span>
+                </span>
+            </div>
+            <button onclick="window.open('https://wa.me/c/971568862055', '_blank')" class="hidden md:flex items-center gap-2 bg-orange-600 hover:bg-orange-500 px-6 py-2.5 rounded-full font-bold transition-all text-sm uppercase shadow-lg shadow-orange-600/20">
+                <i data-lucide="message-circle" class="w-5 h-5"></i> Contact Us
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-stone-950 opacity-70 z-10"></div>
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-orange-600/10 rounded-full blur-[120px] z-0 animate-pulse-slow"></div>
+        <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-amber-600/10 rounded-full blur-[120px] z-0"></div>
+        
+        <img src="https://images.unsplash.com/photo-1585932231552-05b710c90d03?q=80&w=2000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-30" alt="Kitchen">
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <div class="inline-block bg-orange-600/20 text-orange-500 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-8 border border-orange-500/20">
+                Tradition Meets Excellence
+            </div>
+            <h1 class="text-5xl md:text-9xl font-black text-white mb-6 tracking-tighter leading-none uppercase">
+                SK UM SHAMMA'S <br/>
+                <span class="text-orange-500">KITCHEN 🍽️</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-stone-300 font-medium mb-12 max-w-2xl mx-auto italic tracking-wide">
+                Authentic Indian food in Emirates 🇦🇪
+            </p>
+            
+            <div class="flex flex-col items-center justify-center gap-8">
+                <div class="w-full flex flex-col items-center gap-4">
+                    <button onclick="window.open('https://wa.me/c/971568862055', '_blank')" class="w-full sm:w-auto bg-orange-600 px-12 py-6 rounded-full font-black text-xl hover:scale-105 hover:bg-orange-500 transition-all inline-flex items-center justify-center gap-3 shadow-2xl shadow-orange-900/40">
+                        Order on WhatsApp <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+                    </button>
+                    
+                    <div class="mt-4 flex flex-col items-center gap-3">
+                        <div class="flex items-center gap-3 text-orange-400 font-bold uppercase tracking-widest text-xs bg-orange-950/50 px-6 py-2 rounded-full border border-orange-500/20">
+                            <i data-lucide="info" class="w-4 h-4"></i> Minimum of 3 orders required
+                        </div>
+                        <div class="flex items-center gap-3 text-stone-400 font-bold uppercase tracking-[0.2em] text-xs">
+                            <i data-lucide="clock" class="w-4 h-4"></i> Delivery: 1 day pre-order required
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Grid -->
+    <section id="categories" class="py-32 bg-stone-950 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+                <div class="text-left">
+                    <h2 class="text-4xl md:text-7xl font-black text-white tracking-tighter uppercase mb-6">
+                        Our <span class="text-orange-500">Specialties</span>
+                    </h2>
+                    <div class="w-32 h-2.5 bg-orange-600 rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Main Course -->
+                <div onclick="window.open('https://wa.me/c/971568862055', '_blank')" class="group relative h-[450px] rounded-[2.5rem] overflow-hidden cursor-pointer bg-stone-900 border border-white/5 transition-all duration-500 hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-orange-600/20 via-stone-950/40 to-stone-950/80"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 z-10">
+                        <i data-lucide="chef-hat" class="text-orange-500 w-12 h-12 mb-4"></i>
+                        <h3 class="text-3xl font-black text-white uppercase tracking-tighter">Main Courses</h3>
+                        <h4 class="text-lg font-bold text-orange-400 mb-4 font-arabic">الأطباق الرئيسية</h4>
+                        <div class="flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl text-white font-bold text-sm group-hover:bg-orange-600 transition-colors w-max">
+                            <i data-lucide="shopping-bag" class="w-4 h-4"></i> Browse Menu
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div onclick="window.open('https://wa.me/c/971568862055', '_blank')" class="group relative h-[450px] rounded-[2.5rem] overflow-hidden cursor-pointer bg-stone-900 border border-white/5 transition-all duration-500 hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1517244681291-03973d64c836?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-pink-600/20 via-stone-950/40 to-stone-950/80"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 z-10">
+                        <i data-lucide="ice-cream" class="text-pink-500 w-12 h-12 mb-4"></i>
+                        <h3 class="text-3xl font-black text-white uppercase tracking-tighter">Desserts</h3>
+                        <h4 class="text-lg font-bold text-orange-400 mb-4 font-arabic">حلويات هندية</h4>
+                        <div class="flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl text-white font-bold text-sm group-hover:bg-orange-600 transition-colors w-max">
+                            <i data-lucide="shopping-bag" class="w-4 h-4"></i> Browse Menu
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karak -->
+                <div onclick="window.open('https://wa.me/p/25998126399780591/971568862055', '_blank')" class="group relative h-[450px] rounded-[2.5rem] overflow-hidden cursor-pointer bg-stone-900 border border-white/5 transition-all duration-500 hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1594631252845-29fc4586d52c?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-amber-600/20 via-stone-950/40 to-stone-950/80"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 z-10">
+                        <i data-lucide="coffee" class="text-amber-600 w-12 h-12 mb-4"></i>
+                        <h3 class="text-3xl font-black text-white uppercase tracking-tighter">Special Karak</h3>
+                        <h4 class="text-lg font-bold text-orange-400 mb-4 font-arabic">شاي كرك خاص</h4>
+                        <div class="flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl text-white font-bold text-sm group-hover:bg-orange-600 transition-colors w-max">
+                            <i data-lucide="shopping-bag" class="w-4 h-4"></i> View Item
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div onclick="window.open('https://wa.me/p/32787358127579019/971568862055', '_blank')" class="group relative h-[450px] rounded-[2.5rem] overflow-hidden cursor-pointer bg-stone-900 border border-white/5 transition-all duration-500 hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-600/20 via-stone-950/40 to-stone-950/80"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 z-10">
+                        <i data-lucide="glass-water" class="text-blue-500 w-12 h-12 mb-4"></i>
+                        <h3 class="text-3xl font-black text-white uppercase tracking-tighter">Refreshing Drinks</h3>
+                        <h4 class="text-lg font-bold text-orange-400 mb-4 font-arabic">مشروبات منعشة</h4>
+                        <div class="flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl text-white font-bold text-sm group-hover:bg-orange-600 transition-colors w-max">
+                            <i data-lucide="shopping-bag" class="w-4 h-4"></i> View Item
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 text-center border-t border-white/5 bg-stone-950">
+        <div class="flex items-center justify-center gap-4 mb-8">
+            <div class="bg-stone-900 p-3 rounded-2xl"><i data-lucide="utensils" class="text-orange-600 w-6 h-6"></i></div>
+            <span class="font-black text-2xl tracking-tighter uppercase italic">SK UM SHAMMA'S <span class="text-orange-500">KITCHEN 🍽️</span></span>
+        </div>
+        <div class="text-[10px] uppercase tracking-[0.6em] font-black text-stone-600">
+            AUTHENTIC INDIAN TASTE • SERVING THE EMIRATES 🇦🇪
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-stone-950/90', 'backdrop-blur-xl', 'border-b', 'border-white/5', 'py-4');
+                nav.classList.remove('py-8');
+            } else {
+                nav.classList.remove('bg-stone-950/90', 'backdrop-blur-xl', 'border-b', 'border-white/5', 'py-4');
+                nav.classList.add('py-8');
+            }
+        });
+    </script>
+</body>
+</html>
